@@ -1,0 +1,116 @@
+:root{
+    --blanco: #ffffff;
+    --negro: #212121;
+    --primario: #ffc107;
+    --secundario: #0097a7;
+    --gris: #757575;
+}
+
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+ 
+}
+html body{
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+    background-repeat: no-repeat;
+    padding: 2rem;
+    }
+
+header{
+    display: flex;
+    text-align: center;
+    font-size: 2rem;
+    color: var(--gris);
+}
+
+body {
+    font-size: 16px;  
+     /* 1rem=10px */ 
+    font-family: 'Krub', sans-serif;
+    /**degradado de fondo**/
+background-image: linear-gradient(to top,var(--gris) 0%, var(--blanco)100%);
+
+}
+div, main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+
+}
+main {
+    margin-bottom: 5px;
+}
+#text {
+    
+    background: rgb(215, 215, 215);
+   
+    min-width: 60%;
+    min-height: 12rem;
+    border-radius: .5rem;
+}
+
+.hidden {
+    background:  rgb(215, 215, 215);
+
+min-width: 60%;
+min-height: 12rem;
+resize: none;
+border-radius: .5rem;
+
+}
+.botones{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column: auto;
+    width: 60%;
+}
+@media (max-width: 508px){
+.botones {
+    display: flex;
+}
+}
+.encript {
+  
+    background-color: var(--secundario);
+    color: var(--blanco);
+    padding: 1rem 0rem; 
+    margin-top: 1rem;   
+    font-size: 2rem;
+
+   text-decoration: none;
+   text-transform: uppercase;  
+   font-weight: bold; 
+   font-size: 70%;
+   border-radius: .5rem;
+   width: 90%;
+   text-align: center;
+ 
+   box-sizing: border-box;
+   
+   }
+   ::placeholder{
+    text-align: center;
+   }
+   @media (max-width: 508px){
+    ::placeholder{
+       font-size: small;
+        text-align: center;
+        
+       }
+   }
+   .copi {
+    background-color: var(--secundario);
+    color: var(--blanco);
+    padding: 1rem 3rem; 
+    margin-top: 1rem;   
+    font-size: 2rem;
+    border-radius: .5rem;
+   }
+ textarea {
+    cursor: auto;
+ }
